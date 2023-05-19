@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+body {
+  font-family:'Rubik',sans-serif;
+  color:#555;
+  line-height: 1;
+  font-weight: 400;
+  /* border-bottom: 5px; */
+}  
+.container{
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+/*Repepated styling*/
+.grid{
+    display:grid;
+    column-gap: 6.4rem;
+    row-gap: 9.6rem;
+  }
+  .grid-center{
+    justify-content: center;
+    align-items: center;
+  }
+  .grid-2-col{
+    grid-template-columns: repeat(2,1fr);
+  }
+  .grid-3-col{
+    grid-template-columns: repeat(3,1fr);
+  }
+  .grid-4-col{
+    grid-template-columns: repeat(4,1fr);
+  }
+  .grid-5-col{
+    grid-template-columns: repeat(5,1fr);
+  }
+  .head-1,.head-2,.head-3{
+    font-weight: 700;
+    color: #333;
+    letter-spacing: -0.5px;
+  }
+  .head-1 {
+    margin-bottom: 3.2rem;
+    font-size: 5.2rem;
+    /* 44 / 52 / 62 */
+    line-height: 1.05;
+    /* color: #333; */
+    /* text-shadow: 0 5px 5px rgba(0, 0, 0, 0.07); */
+  }
+  .head-2{
+    font-size: 4.4rem;
+    line-height: 1.2;
+    margin-bottom: 9.6rem;
+  }
+  .head-3{
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 3.2rem;
+  }
+  .mini-head{
+    display: block;
+    color: #ff7231;
+    font-weight: 500;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+    letter-spacing: 0.75px;
+  }
+  .btn,
+  .btn:link,
+  .btn:visited {
+    display: inline-block;
+  
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.6rem 3.2rem;
+    border-radius: 9px;
+  
+    /* Only necessary for .btn */
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+  
+    /* Put transition on original "state" */
+    /* transition: background-color 0.3s; */
+    transition: all 0.3s;
+  }
+  
+  /*______________*/
+  .image{
+    width: 100%;
+  }
+  strong{
+    font-weight: 500;
+  }
+  *:focus{
+    outline: none;
+    box-shadow: 0 0 0 0.8rem hsla(28, 80%, 52%, 0.5);
+  }
