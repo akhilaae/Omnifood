@@ -18,6 +18,7 @@
     ></script>
     <link rel="stylesheet" href="general.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="queries.css">
     <title>Omnifood</title>
 
 </head>
@@ -27,7 +28,7 @@
         <div class="logo-container">
             <img class="logo" src="/img/omnifood-logo.png" alt="logo">
         </div>
-        <nav>
+        <nav class="main-nav">
             <ul>
                 <div class="nav-container">
                     <li><a class="nav-link"href="#">How it works</a></li>
@@ -38,6 +39,10 @@
                 </div>
             </ul>
         </nav>
+        <button class="btn-mobile-nav">
+            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
     </header>
     <section class="section-hero">
         <div class="hero">
@@ -46,10 +51,13 @@
                 <p class="hero-text">
                     The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs. We have delivered 250,000+ meals last year!
                 </p>
-                <a href="#" class="btn" onclick="show_answer();">Search</a>
+                <a href="#" class="btn hero-btn" onclick="show_answer();">Search</a>
             </div>
             <div class="img-box">
-                <img class="hero-img" src="img/hero.png" alt="pic">
+                <picture>
+
+                    <img class="hero-img" src="img/hero.png" alt="pic">
+                </picture>
             </div>
         </div>
     </section>
@@ -208,7 +216,7 @@
         </div>
     </section>
     <section class="section-testimonial">
-        <div class="testimonial=container grid grid-2-col">
+        <div class="testimonial-container grid grid-2-col">
             <div class="customer-testimonial">
                 <span class="mini-head">Testimonials</span>
                 <h2 class="head-2">Once you try it, you can't go back</h2>
@@ -379,8 +387,8 @@
                 <span class="footer-subhead">Contact us</span> 
                 <p class="address">623 Harrison St., 2nd Floor, San Francisco, CA 94107</p> 
                 <div>
-                    <a class="footer-links" href="#">415-201-6370</a>
-                    <a class="footer-links" href="#">hello@omnifood.com</a> 
+                    <a class="footer-links" href="tel:415-201-6370">415-201-6370</a>
+                    <a class="footer-links" href="mailto:hello@omnifood.com">hello@omnifood.com</a> 
                 </div>
             </div>
             <div class="account">
