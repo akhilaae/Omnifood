@@ -337,45 +337,45 @@
             </div>
         </div>
     </section>
-    <section class="section-cta container">
-        <div class="cta-container grid grid-2-col">
-            <div class="cta-form-container">
-                <h2 class="cta-head head-2">Get your first meal for free!</h2>
-                <p class="cta-text text-body">Healthy, tasty and hassle-free meals are waiting for you. Start eating well today. You can cancel or pause anytime. And the first meal is on us</p>
-                <form action="get" class="cta-form grid grid-2-col">
-                    <div class="form name">
-                        <label for="full-name">Full Name</label>
-                        <input class="cta-input full-name"type="text" placeholder="name" name="full-name" required="">
-                    </div>
-                    <div class="form e-mail">
-                        <label for="email">Email address</label>
-                        <input class="cta-input email" type="email" placeholder="abc@gmail.com" email="email-id" required="">
-                    </div>
-                    <div class="form place">
-                        <label for="hear">Where did you hear from us?</label>
-                        <select name="cta-input hear" id="hear" required>
-                            <option>Please choose</option>
-                            <option value="faf">Friends and family</option>
-                            <option value="youtube">Youtube</option>
-                            <option value="podcast">Podcast</option>
-                            <option value="ad">Facebook Ad</option>
-                            <option value="others">Others</option>
-                        </select>
-                    </div>
-                    <button class="cta-btn btn cta-input">Sign up now</button>
-                </form>
-            </div>
-            <div class="cta-image">
-                <!-- <img class="cta-img image" src="/img/eating.jpg" alt="eating"> -->
+    <section class="section-cta">
+        <div class="container">
+            <div class="cta-container grid grid-2-col">
+                <div class="cta-form-container">
+                    <h2 class="cta-head head-2">Get your first meal for free!</h2>
+                    <p class="cta-text text-body">Healthy, tasty and hassle-free meals are waiting for you. Start eating well today. You can cancel or pause anytime. And the first meal is on us</p>
+                    <form action="get" class="cta-form grid grid-2-col">
+                        <div class="form name">
+                            <label for="full-name">Full Name</label>
+                            <input class="cta-input full-name"type="text" placeholder="name" name="full-name" required="">
+                        </div>
+                        <div class="form e-mail">
+                            <label for="email">Email address</label>
+                            <input class="cta-input email" type="email" placeholder="abc@gmail.com" email="email-id" required="">
+                        </div>
+                        <div class="form place">
+                            <label for="hear">Where did you hear from us?</label>
+                            <select name="cta-input hear" id="hear" required>
+                                <option>Please choose</option>
+                                <option value="faf">Friends and family</option>
+                                <option value="youtube">Youtube</option>
+                                <option value="podcast">Podcast</option>
+                                <option value="ad">Facebook Ad</option>
+                                <option value="others">Others</option>
+                            </select>
+                        </div>
+                        <button class="cta-btn btn cta-input">Sign up now</button>
+                    </form>
+                </div>
+                <div class="cta-image" role="img" aria-label="Woman enjoying food"></div>
             </div>
         </div>
     </section>
     <section class="footer">
-        <div class="footer-container grid grid-5-col">
-            <div class="logo-soc-copy flex">
-                <a href="#">
-                    <img class="footer-img image" src="/img/omnifood-logo.png" alt="logo">
-                </a>
+        <div class="footer-container container grid grid-5-col">
+            <div class="logo-soc-copy flex footer-box">
+                    <a href="#" class="footer-logo">
+                        <img class="footer-img" src="/img/omnifood-logo.png" alt="logo">
+                    </a>
                 <div class="social">
                     <ion-icon class="footer-icon icon" name="logo-instagram"></ion-icon>
                     <ion-icon class="footer-icon icon" name="logo-facebook"></ion-icon>
@@ -383,7 +383,7 @@
                 </div>
                 <span class="copyright">Copyright &copy; 2023 by Omnifood, Inc. All rights reserved.</span>
             </div>
-            <div class="contact">
+            <div class="contact footer-box">
                 <span class="footer-subhead">Contact us</span> 
                 <p class="address">623 Harrison St., 2nd Floor, San Francisco, CA 94107</p> 
                 <div>
@@ -391,32 +391,34 @@
                     <a class="footer-links" href="mailto:hello@omnifood.com">hello@omnifood.com</a> 
                 </div>
             </div>
-            <div class="account">
-                <span class="footer-subhead">Account</span>
+            <!-- <nav class="nav-col"> -->
+                <div class="account footer-box">
+                    <span class="footer-subhead">Account</span>
                 <div class="flex flex-gap">
                     <a class="footer-links" href="#">Create account</a>
                     <a class="footer-links" href="#">Sign in</a>
                     <a class="footer-links" href="#">iOS app</a>
                     <a class="footer-links" href="#">Android app</a>
                 </div>
-            </div>
-            <div class="company">
-                <span class="footer-subhead">Company</span>
-                <div class="flex flex-gap">
-                    <a class="footer-links" href="#">About Omnifood</a>
-                    <a class="footer-links" href="#">For Business</a>
-                    <a class="footer-links" href="#">Cooking partners</a>
-                    <a class="footer-links" href="#">Careers</a>
                 </div>
-            </div>
-            <div class="resources">
-                <span class="footer-subhead">Resources</span>
-                <div class="flex flex-gap">
-                    <a class="footer-links" href="#">Recipe directory</a>
-                    <a class="footer-links" href="#">Help center</a>
-                    <a class="footer-links" href="#">Privacy policy</a>
+                <div class="company footer-box">
+                    <span class="footer-subhead">Company</span>
+                    <div class="flex flex-gap">
+                        <a class="footer-links" href="#">About Omnifood</a>
+                        <a class="footer-links" href="#">For Business</a>
+                        <a class="footer-links" href="#">Cooking partners</a>
+                        <a class="footer-links" href="#">Careers</a>
+                    </div>
                 </div>
-            </div>
+                <div class="resources footer-box">
+                    <span class="footer-subhead">Resources</span>
+                    <div class="flex flex-gap">
+                        <a class="footer-links" href="#">Recipe directory</a>
+                        <a class="footer-links" href="#">Help center</a>
+                        <a class="footer-links" href="#">Privacy policy</a>
+                    </div>
+                </div>
+            <!-- </nav> -->
         </div>
     </section>
 </body>

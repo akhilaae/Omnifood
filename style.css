@@ -378,6 +378,7 @@ textarea{
   background-image: linear-gradient(to right bottom,hsl(28, 80%, 61%),#e67e22);
   gap: 0;
   border-radius: 11px;
+  overflow: hidden;
 }
 .cta-form-container{
   padding: 4.8rem 6.4rem 6.4rem 6.4rem;
@@ -386,7 +387,7 @@ textarea{
 .cta-image{
   background-image: linear-gradient(to right bottom,hsla(28, 80%, 61%, 0.35),hsla(28, 80%, 52%, 0.35)), url(/img/eating.jpg);
   background-size: cover;
-  background-position: right;
+  background-position: center;
 }
 .cta-head{
   margin-bottom:3.2rem;
@@ -450,9 +451,11 @@ label{
   grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
 }
 .footer-img{
-  width: 75%;
   height: 2.2rem;
-  margin-bottom: 3.2rem;
+}
+.footer-logo {
+    display: block;
+    margin-bottom: 3.2rem;
 }
 .footer-icon{
   color: #888;
