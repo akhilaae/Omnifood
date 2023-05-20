@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Omnifood is an AI-powered food subscription that will make you eat healthy again, 365 days per year. It's tailored to your personal tastes and nutritional needs."/>
-    <link rel="icon" href="/img/favicon.png">
-    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+    <link rel="icon" href="/favicons/favicon.png">
+    <link rel="apple-touch-icon" href="/favicons/apple-touch-icon.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,8 +58,14 @@
             </div>
             <div class="img-box">
                 <picture>
-
-                    <img class="hero-img" src="img/hero.png" alt="pic">
+                    <source srcset="img/hero.webp" type="image/webp" />
+                    <source srcset="img/hero-min.png" type="image/png" />
+                    
+                    <img
+                      src="img/hero-min.png"
+                      class="hero-img"
+                      alt="Woman enjoying food, meals in storage container, and food bowls on a table"
+                    />
                 </picture>
             </div>
         </div>
@@ -342,7 +348,7 @@
                 <div class="cta-form-container">
                     <h2 class="cta-head head-2">Get your first meal for free!</h2>
                     <p class="cta-text text-body">Healthy, tasty and hassle-free meals are waiting for you. Start eating well today. You can cancel or pause anytime. And the first meal is on us</p>
-                    <form action="get" class="cta-form grid grid-2-col">
+                    <form class="cta-form grid grid-2-col" name="sign-up" netlify>
                         <div class="form name">
                             <label for="full-name">Full Name</label>
                             <input class="cta-input full-name"type="text" placeholder="name" name="full-name" required="">
@@ -353,7 +359,7 @@
                         </div>
                         <div class="form place">
                             <label for="hear">Where did you hear from us?</label>
-                            <select name="cta-input hear" id="hear" required>
+                            <select name="hear" id="hear" class="cta-input hear" required>
                                 <option>Please choose</option>
                                 <option value="faf">Friends and family</option>
                                 <option value="youtube">Youtube</option>
