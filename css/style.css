@@ -6,7 +6,7 @@
   /* margin: 0 3rem; */
   /* position: fixed; */
   padding: 0 4.8rem;
-  background-color:#fff2ec;
+  background-color:#fdf2e9;
   position: relative;
 }
 .icon-container{
@@ -38,17 +38,17 @@
   transition: all 0.3s;
 }
 .nav-link:active,.nav-link:hover{
-  color: #ff7e42;
+  color:  #cf711f;
 }
 .samelink:link,.samelink:visited{
-  background-color: #ff7e42;
+  background-color: #cf711f;
   transition: 0.3s;
   padding: 1.2rem 2.4rem;
   border-radius: 9px;
   color: #fff;
 }
 .samelink:hover,.samelink:active{
-  background-color:#ff9564;
+  background-color:#c0691d;
 }
 .btn-mobile-nav{
   border: none;
@@ -63,6 +63,21 @@
 }
 .icon-mobile-nav[name="close-outline"]{
   display: none;
+}
+.sticky .header{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  background-color: rgba(255, 255, 255, 0.97);
+  padding-top: 0;
+  padding-bottom: 0;
+  box-shadow: 0 1.2rem 3.2rem rgba(0,0,0,0.03);
+  z-index: 999;
+}
+.sticky .section-hero {
+  margin-top: 9.6rem;
 }
 .section-hero {
   background-color: #fdf2e9;
@@ -98,10 +113,10 @@ textarea{
 
 .btn:link, .btn:visited{
   color:#fff;
-  background-color: #ff7e42;
+  background-color: #cf711f;
 }
 .btn:hover, .btn:active{
-  background-color: #ff9564;
+  background-color: #c0691d;
 }
 .section-featured-in{
   padding: 4.8rem 0 3.2rem 0;
@@ -237,7 +252,7 @@ textarea{
   margin-bottom: 3.2rem;
 }
 .icon{
-  color: #ff7231;
+  color: #e67e22;
   height: 2.4rem;
   width: 2.4rem;
 }
@@ -247,13 +262,13 @@ textarea{
   text-align: center;
 }
 .recipe-link:link,.recipe-link:visited{
-  color: #ff7e42;
+  color: #cf711f;
   transition: all 0.3s;
   text-decoration: none;
   border-bottom: 1px solid currentColor;
 }
 .recipe-link:hover,.recipe-link:active{
-  color: #ff7231;
+  color: #c0691d;
   border-bottom: 1px solid transparent;
 }
 .section-testimonial{

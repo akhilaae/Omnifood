@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Omnifood is an AI-powered food subscription that will make you eat healthy again, 365 days per year. It's tailored to your personal tastes and nutritional needs."/>
+    <link rel="icon" href="/img/favicon.png">
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
@@ -16,27 +19,27 @@
       nomodule=""
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
     ></script>
-    <link rel="stylesheet" href="general.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="queries.css">
-    <title>Omnifood</title>
+    <script defer src="/js/script.js"></script>
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/queries.css">
+    <title>Omnifood &mdash; Never cook again!</title>
 
 </head>
 <body>
-    
     <header class="header">
         <div class="logo-container">
             <img class="logo" src="/img/omnifood-logo.png" alt="logo">
         </div>
         <nav class="main-nav">
-            <ul>
-                <div class="nav-container">
-                    <li><a class="nav-link"href="#">How it works</a></li>
-                    <li><a class="nav-link" href="#">Meals</a></li>
-                    <li><a class="nav-link" href="#">Testimonials</a></li>
-                    <li><a class="nav-link" href="#">Pricing</a></li>
-                    <li><a class="nav-link samelink" href="#">Try for free</a></li>
-                </div>
+            <ul class="nav-container">
+                <!-- <div class="nav-container"> -->
+                    <li><a class="nav-link"href="#how">How it works</a></li>
+                    <li><a class="nav-link" href="#meal">Meals</a></li>
+                    <li><a class="nav-link" href="#testimonial">Testimonials</a></li>
+                    <li><a class="nav-link" href="#price">Pricing</a></li>
+                    <li><a class="nav-link samelink" href="#cta">Try for free</a></li>
+                <!-- </div> -->
             </ul>
         </nav>
         <button class="btn-mobile-nav">
@@ -51,7 +54,7 @@
                 <p class="hero-text">
                     The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs. We have delivered 250,000+ meals last year!
                 </p>
-                <a href="#" class="btn hero-btn" onclick="show_answer();">Search</a>
+                <a href="#cta" class="btn hero-btn">Search</a>
             </div>
             <div class="img-box">
                 <picture>
@@ -73,7 +76,7 @@
             </div>
         </div>
     </section>
-    <section class="how-to">
+    <section class="how-to" id="how">
         <div class="how-head container">
             <span class="mini-head">How it works</span>
             <h2 class="head-2">Your daily dose of health in 3 simple steps</h2>
@@ -108,7 +111,7 @@
             </div>
         </div>
     </section>
-    <section class="section-meals">
+    <section class="section-meals" id="meal">
         <div class="meals-head container">
             <span class="mini-head">Meals</span>
             <h2 class="head-2">Omnifood AI chooses from 5,000+ recipes</h2>
@@ -123,21 +126,19 @@
                     <p class="meal-name">
                         Japanese Gyozas
                     </p>
-                    <ul>
-                        <div class="meal-container list">
-                            <li class="meal-list-item icon-data">
-                                <ion-icon class="meals-icon icon" name="flame-outline"></ion-icon>
-                                <span><strong>650</strong> calories</span>
-                            </li>
-                            <li class="meal-list-item icon-data">
-                                <ion-icon class="meals-icon icon" name="restaurant-outline"></ion-icon>
-                                <span>NutriScore ® <strong>74</strong> </span>
-                            </li>
-                            <li class="meal-list-item icon-data">
-                                <ion-icon class="meals-icon icon" name="star-outline"></ion-icon>
-                                <span><strong>4.9</strong>  rating (537)</span>
-                            </li>
-                        </div>
+                    <ul class="meal-container list">
+                        <li class="meal-list-item icon-data">
+                            <ion-icon class="meals-icon icon" name="flame-outline"></ion-icon>
+                            <span><strong>650</strong> calories</span>
+                        </li>
+                        <li class="meal-list-item icon-data">
+                            <ion-icon class="meals-icon icon" name="restaurant-outline"></ion-icon>
+                            <span>NutriScore ® <strong>74</strong> </span>
+                        </li>
+                        <li class="meal-list-item icon-data">
+                            <ion-icon class="meals-icon icon" name="star-outline"></ion-icon>
+                            <span><strong>4.9</strong>  rating (537)</span>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -151,21 +152,19 @@
                     <p class="meal-name">
                         Vegan and Paleo
                     </p>
-                    <ul>
-                        <div class="meal-container list">
-                            <li class="meal-list-item icon-data">
-                                <ion-icon class="meals-icon icon" name="flame-outline"></ion-icon>
-                                <span><strong>400</strong> calories</span>
-                            </li>
-                            <li class="meal-list-item icon-data">
-                                <ion-icon class="meals-icon icon" name="restaurant-outline"></ion-icon>
-                                <span>NutriScore ® <strong>92</strong> </span>
-                            </li>
-                            <li class="meal-list-item icon-data">
-                                <ion-icon class="meals-icon icon" name="star-outline"></ion-icon>
-                                <span><strong>4.8</strong>  rating (441)</span>
-                            </li>
-                        </div>
+                    <ul class="meal-container list">
+                        <li class="meal-list-item icon-data">
+                            <ion-icon class="meals-icon icon" name="flame-outline"></ion-icon>
+                            <span><strong>400</strong> calories</span>
+                        </li>
+                        <li class="meal-list-item icon-data">
+                            <ion-icon class="meals-icon icon" name="restaurant-outline"></ion-icon>
+                            <span>NutriScore ® <strong>92</strong> </span>
+                        </li>
+                        <li class="meal-list-item icon-data">
+                            <ion-icon class="meals-icon icon" name="star-outline"></ion-icon>
+                            <span><strong>4.8</strong>  rating (441)</span>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -215,7 +214,7 @@
             <a class="recipe-link" href="#">See all recipes &rarr;</a>
         </div>
     </section>
-    <section class="section-testimonial">
+    <section class="section-testimonial" id="testimonial">
         <div class="testimonial-container grid grid-2-col">
             <div class="customer-testimonial">
                 <span class="mini-head">Testimonials</span>
@@ -259,7 +258,7 @@
             </div>
         </div>
     </section>
-    <section class="section-pricing">
+    <section class="section-pricing" id="price">
         <div class="pricing-head container">
             <span class="mini-head">pricing</span>
             <h2 class="head-2">Eating well without breaking the bank</h2>
@@ -337,7 +336,7 @@
             </div>
         </div>
     </section>
-    <section class="section-cta">
+    <section class="section-cta" id="cta">
         <div class="container">
             <div class="cta-container grid grid-2-col">
                 <div class="cta-form-container">
@@ -381,7 +380,7 @@
                     <ion-icon class="footer-icon icon" name="logo-facebook"></ion-icon>
                     <ion-icon class="footer-icon icon" name="logo-twitter"></ion-icon>
                 </div>
-                <span class="copyright">Copyright &copy; 2023 by Omnifood, Inc. All rights reserved.</span>
+                <span class="copyright">Copyright &copy; <span class="year">1234</span> by Omnifood, Inc. All rights reserved.</span>
             </div>
             <div class="contact footer-box">
                 <span class="footer-subhead">Contact us</span> 
